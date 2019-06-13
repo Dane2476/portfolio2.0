@@ -46,7 +46,6 @@ li{
 .container-fluid{
   padding-left: 0;
   padding-right: 0;
-  width:100vw;
 }
 .row {
   padding-left: 0;
@@ -128,7 +127,7 @@ li{
   padding: 0;
   width:100vw;
   svg{
-    width:100%;
+    width:100vw;
   }
 }
 .skills{
@@ -236,6 +235,8 @@ li{
 
 
 .bg-wrapper{
+  padding:0;
+  margin:0;
   width: 100vw;
   background-color: $maincolor;
   .work{
