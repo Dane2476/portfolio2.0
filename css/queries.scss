@@ -45,6 +45,18 @@
   #to-top{
     display:none;
   }
+  .divider{
+    margin-bottom: 0;
+  }
+  .intro{
+    .content{
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 1em;
+    }
+  }
   .contact{
     .contact-bottom{
       ul{

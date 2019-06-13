@@ -5,16 +5,22 @@ document.addEventListener("DOMContentLoaded", function(){
   });
   var toTop = document.querySelector("#to-top");
   document.addEventListener('scroll', function(){
-    if (window.scrollY > 150){
-      toTop.style.visibility = 'visible';
-      toTop.style.opacity = '1'
+    if (window.innerWidth > 799.88){
+      if (window.scrollY > 150){
+        toTop.style.visibility = 'visible';
+        toTop.style.opacity = '1'
 
+      }
+      else if (window.scrollY < 150){
+        toTop.style.opacity = '0';
+        toTop.style.visibility = 'hidden';
+      }
+      colorDetect();
     }
-    else if (window.scrollY < 150){
-      toTop.style.opacity = '0';
-      toTop.style.visibility = 'hidden';
+    else{
+      return false;
     }
-    colorDetect();
+
   });
 
   document.querySelector("#to-top").addEventListener("click", function(){
