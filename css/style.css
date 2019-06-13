@@ -1,3 +1,8 @@
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 body {
   font-size: 100%;
   font-family: Raleway, Helvetica, sans-serif;
@@ -91,6 +96,14 @@ li {
 #to-top:hover i {
   color: white;
   top: 30%;
+}
+
+.caption {
+  transition: 0.4s ease;
+  opacity: 0;
+  margin-right: 77px;
+  font-size: 0.5em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .intro .content {

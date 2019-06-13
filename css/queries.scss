@@ -2,6 +2,9 @@
   body{
     font-size: 85%;
   }
+  .caption{
+    margin-right: 65px;
+  }
   .showcase{
     .col-lg{
       .image{
@@ -14,6 +17,9 @@
 
 @media screen and (max-width: 991.98px){
   body{
+  }
+  .caption{
+    margin-right:0;
   }
   .intro{
     .image{
