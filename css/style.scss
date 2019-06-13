@@ -125,9 +125,11 @@ li{
 .divider{
   margin:0;
   margin-bottom: -10px;
-  margin-left: -5px;
   padding: 0;
-  width:110vw;
+  width:100vw;
+  svg{
+    width:100%;
+  }
 }
 .skills{
   padding-top:0;

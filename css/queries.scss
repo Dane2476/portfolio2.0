@@ -45,9 +45,6 @@
   #to-top{
     display:none;
   }
-  .divider{
-    margin-bottom: 0;
-  }
   .intro{
     .content{
       margin-left: 15px;
@@ -62,10 +59,10 @@
       ul{
 
         li{
-          padding: 0 10px 0 10px;
+          padding: 0 5px 0 5px;
           a{
-            padding: 0 2px 0 2px;
-            font-size: 1.2em;
+            padding-right: 2px;
+            font-size: 1.02em;
 
           }
         }
