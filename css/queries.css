@@ -30,9 +30,26 @@
     margin-bottom: 60px;
   }
 }
+@media screen and (max-width: 799.88px) {
+  #to-top {
+    display: none;
+  }
+
+  .contact .contact-bottom ul li {
+    padding: 0 10px 0 10px;
+  }
+  .contact .contact-bottom ul li a {
+    padding: 0 2px 0 2px;
+    font-size: 1.2em;
+  }
+}
 @media screen and (max-width: 559.98px) {
   body {
     font-size: 60%;
+  }
+
+  .intro .content {
+    font-size: 1em;
   }
 
   .showcase .col-lg .image {
