@@ -25,6 +25,7 @@
 
       gtag('config', 'UA-140798132-1');
     </script>
+    <!-- End Analytics -->
 
   </head>
   <body>
@@ -35,80 +36,69 @@
   <div class="container-fluid">
     <div class="row justify-content-md-center intro">
       <div class="col-lg-5 text-right image preload">
-        <div class="self-portrait">
-          <img src="imgs/dane.png" alt="">
-        </div>
-        <div class="caption">
-          <p>Self-portrait created in Illustrator</p>
-        </div>
+        <img id="self-portrait" src="imgs/dane.png" alt="">
       </div>
       <div class="col-lg-7 text-left content preload">
           <h1 class="preload">Hey, I'm <font class="name">Dane</font>.</h1>
           <p>
             I'm a Full-Stack Web Developer from Orange County, CA.<br>
-            I am currently freelancing and working on projects <br>
-            to improve my development skills while seeking <br>
-            full-time employment.<br>
+            I am passionate about learning new things and improving.<br>
+            I strive to create beautiful and user-friendly experiences.<br>
+            I'm currently seeking my next opportunity, <a href="#contact">let's chat!</a><br>
           </p>
           <h5>
             <span><a href="https://www.dropbox.com/s/lsr7gwxyoyg8o3t/Dane%20Maison%20-%20Resume.pdf?dl=0" target="_blank"><i class="far fa-file"></i></a></span>
             <span><a href="https://github.com/Dane2476" target="_blank"><i class="fab fa-github"></i></a></span>
-            <span><a href="mailto:danemaison@gmail.com"><i class="fas fa-envelope"></i></a></span>
+            <span><a href="#contact"><i class="fas fa-envelope"></i></a></span>
           </h5>
 
         </div>
       </div>
     </div>
     <object class="divider skillsDivider" type="image/svg+xml" data="imgs/divider.svg"></object>
-    <div class="container-fluid skills">
-      <div class="row skills justify-content-center">
-        <div class="col-auto-sm">
-          <object type="image/svg+xml" data="imgs/divider.svg"></object>
-          <header>
-            <h2>Skills</h2>
-            <hr>
-            <br>
-          </header>
-          <div class="wrapper">
-            <h5>Languages</h5>
-            <br>
-            <ul class="languages">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
+    <div class="background-skills">
+      <div class="container skills">
+        <div class="row skills justify-content-center">
+          <div class="col-auto-sm">
+            <object type="image/svg+xml" data="imgs/divider.svg"></object>
+            <header>
+              <h2>Tools</h2>
+              <hr>
               <br>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>C</li>
-              <li>C++</li>
-            </ul>
-          </div>
-          <div class="wrapper">
-            <br>
-            <h5>Frameworks</h5>
-            <br>
-            <ul class="frameworks">
-              <li>Django</li>
-              <li>Flask</li>
-              <li>Scrapy</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="wrapper">
-            <br>
-            <h5>Tools</h5>
-            <br>
-            <ul class="tools">
-              <li>Git/Github</li>
-              <li>APIs</li>
-              <li>Bash</li>
-              <li>Heroku</li>
+            </header>
+            <div class="wrapper">
+              <h5>Front End</h5>
               <br>
-              <li>Wordpress</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>XD</li>
-            </ul>
+              <ul class="languages">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class="wrapper">
+              <br>
+              <h5>Back End</h5>
+              <br>
+              <ul class="frameworks">
+                <li>Python</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>APIs</li>
+              </ul>
+            </div>
+            <div class="wrapper">
+              <br>
+              <h5>Tools</h5>
+              <br>
+              <ul class="tools">
+                <li>Git</li>
+                <li>Heroku</li>
+                <li>WordPress</li>
+                <li>Adobe Suite</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -127,10 +117,11 @@
         <div class="col-lg">
           <h3>Fat Slice</h3>
           <br>
-          <p>Fat Slice is a Django application. Prior to creating this app, I had been using Flask extensively.
-            I wanted to learn a more robust backend framework, and Django is one of the most popular!<br><br>
-            While creating this project, I learned a lot about Django, designing and using relational databases, and CRUD operations.<br><br>
-            Users can register, login, and order pizzas. The user's data is secure with Django's built in authentication system.
+          <p>Fat Slice is a Django application. Users can register, login, and order various menu items.<br><br>
+            Using Django's awesome ORM, I designed a relational database to keep track of menu items and user orders.
+            The database allows administrators to update the menu without having to hardcode items in HTML.
+            Additionally, I used JavaScript to ensure a clean and intuitive user experience when placing orders.<br><br>
+            To handle user data, I utilized Django's built in authentication system.<br>
          </p>
            <br>
            <ul class="fatslice">
@@ -140,7 +131,7 @@
              <li>Python</li>
              <br>
              <li>Django</li>
-             <li>SQL</li>
+             <li>PostgreSQL</li>
            </ul>
         </div>
         <div class="col-lg">
@@ -163,11 +154,11 @@
         <div class="col-lg">
           <h3>Flack</h3>
           <br>
-          <p>I created Flack to learn how to work with websockets.
-           Websockets allow users to join Flack and send messages/create new channels in real-time.
-           <br> <br>
-           This project also helped me discover the versatility, and just general awesomeness, of SVGs.
-           I played around with some animations on the landing page; there are endless possibilities!
+          <p>This app uses websockets to allow users to join a chatroom and send messages/create new channels in real-time.
+            Since many users are able to join the chatroom, it was essential to include some XSS sanitization.
+           <br><br>
+           The application primarily uses JavaScript to send and recieve signals sent by the user to the backend, which is written in Python (Flask).
+           <br><br>I also played around with some SVG animation on the landing page.
           </p>
            <br>
            <ul class="flack">
@@ -185,9 +176,12 @@
         <div class="col-lg">
           <h3>Footnotes</h3>
           <br>
-          <p>I created this application to further emphasize my understanding of Flask and SQL.
-            Additionally, I was able to practice using APIs by creating my own, as well as working with Goodreads' API.<br><br>
-            Users can register, login, and view reviews for books by other users as well as from Goodreads!<br><br>User passwords are hashed and secure.
+          <p>
+            This app allows users to sign up, login, and write reviews for books. The books were uploaded to a PostgreSQL database with the
+            use of a CSV parser. Additionally, I used Goodreads' API to get and display book review data from Goodreads.
+            <br><br>
+            I created a RESTful API which outputs user review data from Footnotes.
+            <br><br>User passwords are hashed and secure.
            </p>
            <br>
            <ul class="footnotes">
@@ -196,7 +190,7 @@
              <li>Python</li>
              <br>
              <li>Flask</li>
-             <li>SQL</li>
+             <li>PostgreSQL</li>
              <li>Goodreads API</li>
            </ul>
         </div>
@@ -219,9 +213,8 @@
         <div class="col-lg">
           <h3>News Map</h3>
           <br>
-          <p>This project was completed as part of the HarvardX CS50 curriculum. Part of the code was written by CS50's teaching staff.</p>
-           <br>
-           As the user interacts with the map, markers appear for random locations.
+          <p>
+           As the user interacts with the map, Google maps markers appear for random locations.
            The markers contain links to the top 5 news stories for those locations.
            <br><br>
            I have not hosted this application as the database is too large for Heroku's basic plan and Google has dropped support
@@ -237,7 +230,7 @@
            </ul>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row bottom justify-content-center">
         <div class="col text-center">
             Check out the code and more of my projects! <br>
             <a target="_blank" href="https://github.com/Dane2476" class="footer-btn">My Github <i class="fab fa-github"></i></a>
@@ -245,7 +238,7 @@
 
       </div>
     </div>
-    <object class="divider workDivider" type="image/svg+xml" data="imgs/divider2.svg"></object>
+    <object class="divider workDivider" type="image/svg+xml" data="imgs/divider3.svg"></object>
     <div class="bg-wrapper">
       <div class="container work">
         <div class="row header justify-content-center">
@@ -261,10 +254,12 @@
             <br>
             <h3>Nevada Home Fitness</h3>
             <br>
-            <p>This is a WordPress website I built for a client in summer 2018.<br> The client requested a product catalog
+            <p>This client requested a product catalog
               that showcased their inventory, which comes from a large number of manufacturers. To get around manually importing each product,
               I leveraged a web scraping library to quickly copy information off of the manufacturers' websites into Excel.
               <br><br>
+              I designed the site using WordPress, CSS, and PHP.
+              <br>
               I also wrote copy for a large portion of the site, created graphics, and worked with representitves from large corporations to acquire
               media assets.
             </p>
@@ -288,20 +283,32 @@
         </div>
       </div>
     </div>
-    <div class="container contact">
-      <div class="row contact-top">
+    <div id="contact" class="container contact">
+      <div class="row justify-content-center">
         <div class="col text-center">
           <h2>Contact</h2>
           <hr>
-        </div>
-      </div>
-      <div class="row contact-bottom justify-content-center">
-        <div class="col text-center">
-          <ul>
-            <li><i class="fas fa-at"></i><a href="mailto:danemaison@gmail.com">danemaison@gmail.com</a></li>
-            <li><i class="fab fa-github"></i><a href="https://github.com/Dane2476" target="_blank">Dane2476</a></li>
-            <li><i class="far fa-file"></i><a href="https://www.dropbox.com/s/lsr7gwxyoyg8o3t/Dane%20Maison%20-%20Resume.pdf?dl=0" target="_blank">Resume</a></li>
-          </ul>
+          <br>
+          <h4>Let's get in touch!</h4>
+          <div class="row form">
+            <div class="col text-center form">
+              <form class="text-center justify-content-center" action="https://formspree.io/danemaison@gmail.com" method="POST">
+                <input autocomplete="off" type="text" name="name" placeholder="Your name">
+                <input type="email" name="_replyto" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input class="submit" type="submit" value="Send">
+              </form>
+            </div>
+          </div>
+          <div class="row links">
+            <div class="col text-center">
+              <ul>
+                <li><i class="fab fa-github"></i><a href="https://github.com/Dane2476" target="_blank">Dane2476</a></li>
+                <li><i class="far fa-file"></i><a href="https://www.dropbox.com/s/lsr7gwxyoyg8o3t/Dane%20Maison%20-%20Resume.pdf?dl=0" target="_blank">Resume</a></li>
+              </ul>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>

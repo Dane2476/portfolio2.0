@@ -98,17 +98,18 @@ li {
   top: 30%;
 }
 
-.caption {
-  transition: 0.4s ease;
-  opacity: 0;
-  margin-right: 77px;
-  font-size: 0.5em;
-  color: rgba(0, 0, 0, 0.8);
+.intro {
+  padding: 10em 0 10em 0;
 }
-
 .intro .content {
   padding-top: 1em;
   padding-left: 2em;
+}
+.intro .content a {
+  color: #2CDA9D;
+}
+.intro .content a:hover {
+  color: #373F51;
 }
 .intro img {
   width: 22em;
@@ -144,26 +145,21 @@ li {
   width: 100vw;
 }
 
-.skills {
-  padding-top: 0;
-  color: white;
+.background-skills {
   background-color: #373F51;
+  width: 100vw;
+}
+
+.skills {
+  padding: 0 2em 5em 2em;
+  color: white;
 }
 .skills h2 {
-  text-align: center;
-}
-.skills h5 {
-  text-align: center;
-}
-.skills ul {
   text-align: center;
 }
 .skills li {
   display: inline;
   padding-right: 2em;
-}
-.skills .wrapper {
-  padding: 2em;
 }
 .skills .languages li::before {
   background-color: #D90368;
@@ -202,6 +198,10 @@ li {
 .projects h3 {
   text-align: left;
 }
+.projects .bottom {
+  padding-top: 2em;
+  padding-bottom: 0em;
+}
 
 .showcase {
   padding-top: 4em;
@@ -232,7 +232,7 @@ li {
   color: #373F51;
   padding-left: 50px;
   padding-right: 50px;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
 }
 
 .footer-btn:hover {
@@ -240,12 +240,17 @@ li {
   color: white;
   border: 1px solid #2CDA9D;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   background-color: #2CDA9D;
 }
 
+.workDivider {
+  width: 100vw;
+  margin-left: -5px;
+}
+
 .bg-wrapper {
-  padding: 0;
+  padding: 0 0 2em 0;
   margin: 0;
   width: 100vw;
   background-color: #373F51;
@@ -255,28 +260,70 @@ li {
   padding-bottom: 2em;
 }
 .bg-wrapper .work .row {
-  padding-top: 2em;
+  padding-top: 0em;
 }
 
-.contact .contact-top {
-  padding-bottom: 1em;
+.contact {
+  padding: 2em 0 2em 0;
 }
-.contact .contact-bottom {
-  padding-top: 0;
+.contact .row {
+  padding: 0;
 }
-.contact .contact-bottom ul {
+.contact .form {
+  padding-top: 15px;
+}
+.contact .links {
+  margin-top: 50px;
+  padding-bottom: 2em;
+}
+.contact ul {
   display: inline;
 }
-.contact .contact-bottom ul li {
+.contact ul li {
   padding: 0 15px 0 15px;
 }
-.contact .contact-bottom ul li a {
+.contact ul li a {
   padding: 0 5px 0 5px;
   color: #373F51;
-  font-size: 1.2em;
+  font-size: 1em;
 }
-.contact .contact-bottom ul li a:hover {
+.contact ul li a:hover {
   color: #2CDA9D;
+}
+.contact h2 {
+  text-align: center;
+}
+.contact form {
+  width: 80%;
+  display: inline-block;
+}
+.contact form input {
+  margin: auto;
+  width: 40%;
+  border: 1px solid #373F51;
+  color: #373F51;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.contact form textarea {
+  margin: auto;
+  width: 80.5%;
+  border: 1px solid #373F51;
+  padding: 3px 5px 4px;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: block;
+}
+.contact form .submit {
+  border: 1px solid #373F51;
+  transition: 0.1s ease;
+}
+.contact form .submit:hover {
+  color: white;
+  background-color: #2CDA9D;
+  border: 1px solid transparent;
+  transition: 0.1s ease;
+  cursor: pointer;
 }
 
 .fatslice li::before {

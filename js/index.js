@@ -25,12 +25,14 @@ document.addEventListener("DOMContentLoaded", function(){
   document.querySelector("#to-top").addEventListener("click", function(){
     window.scrollTo({top:0,behavior:'smooth'}); // Not supported on Safari or IE
   });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
 
-  document.querySelector('.self-portrait').addEventListener("mouseover", function(){
-    document.querySelector('.caption').style.opacity = '1';
-  });
-  document.querySelector('.self-portrait').addEventListener("mouseout", function(){
-    document.querySelector('.caption').style.opacity = '0';
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
   });
 
 });

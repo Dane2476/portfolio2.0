@@ -90,16 +90,15 @@ li{
 }
 
 
-
-.caption{
-  transition: .4s ease;
-  opacity:0;
-  margin-right:77px;
-  font-size: .5em;
-  color:rgba(0, 0, 0, .8);
-}
 .intro{
+  padding: 10em 0 10em 0;
   .content{
+    a{
+      color: $accent;
+    }
+    a:hover{
+      color: $maincolor;
+    }
     padding-top:1em;
     padding-left: 2em;
   }
@@ -140,26 +139,19 @@ li{
     width:100vw;
   }
 }
+.background-skills{
+    background-color: $maincolor;
+    width:100vw;
+}
 .skills{
-  padding-top:0;
+  padding: 0 2em 5em 2em;
   color:white;
-  background-color: $maincolor;
-
   h2{
-    text-align: center;
-  }
-  h5{
-    text-align: center;
-  }
-  ul{
     text-align: center;
   }
   li{
     display:inline;
     padding-right: 2em;
-  }
-  .wrapper{
-    padding:2em;
   }
   .languages li::before{
     background-color: #D90368;
@@ -201,6 +193,10 @@ li{
   h3{
     text-align: left;
   }
+  .bottom{
+    padding-top:2em;
+    padding-bottom: 0em;
+  }
 }
 
 .showcase{
@@ -221,6 +217,7 @@ li{
     }
   }
 }
+
 .footer-btn{
   display: inline-block;
   text-decoration: none;
@@ -232,20 +229,24 @@ li{
   color: #373F51;
   padding-left: 50px;
   padding-right: 50px;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
 }
 .footer-btn:hover{
   text-decoration: none;
   color: white;
   border: 1px solid #2CDA9D;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   background-color: #2CDA9D;
 }
 
 
+.workDivider{
+  width:100vw;
+  margin-left:-5px;
+}
 .bg-wrapper{
-  padding:0;
+  padding:0 0 2em 0;
   margin:0;
   width: 100vw;
   background-color: $maincolor;
@@ -253,35 +254,74 @@ li{
     color:white;
     padding-bottom:2em;
     .row{
-      padding-top:2em;
+      padding-top:0em;
     }
   }
 }
 .contact{
-  .contact-top{
-    padding-bottom: 1em;
+  padding:2em 0 2em 0;
+  .row{
+    padding:0;
   }
-  .contact-bottom{
-    padding-top:0;
-    ul{
-      display: inline;
-      li{
-        padding: 0 15px 0 15px;
-        a{
-          padding: 0 5px 0 5px;
-          color:$maincolor;
-          font-size: 1.2em;
+  .form{
+    padding-top:15px;
+  }
+  .links{
+    margin-top:50px;
+    padding-bottom:2em;
+  }
+  ul{
+    display: inline;
+    li{
+      padding: 0 15px 0 15px;
+      a{
+        padding: 0 5px 0 5px;
+        color:$maincolor;
+        font-size: 1em;
 
-        }
-        a:hover{
-          color:$accent;
-        }
       }
-
+      a:hover{
+        color:$accent;
+      }
     }
 
   }
+  h2{
+    text-align: center;
+  }
+  form{
+    width:80%;
+    display:inline-block;
+    input{
+      margin: auto;
+      width:40%;
+      border:1px solid $maincolor;
+      color:$maincolor;
+      margin-top: 5px;
+      border-radius: 5px;
+    }
+    textarea{
+      margin: auto;
+      width:80.5%;
+      border: 1px solid $maincolor;
+      padding: 3px 5px 4px;
+      border-radius:5px;
+      margin-top: 5px;
+      display:block;
+    }
+    .submit{
+      border: 1px solid $maincolor;
+            transition: .1s ease;
+    }
+    .submit:hover{
+      color:white;
+      background-color: $accent;
+      border:1px solid transparent;
+      transition: .1s ease;
+      cursor: pointer;
+    }
 
+  }
 }
 //Bullets for project stacks
 .fatslice{
