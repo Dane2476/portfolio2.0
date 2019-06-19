@@ -137,9 +137,10 @@ li {
 
 .divider {
   margin: 0;
+  margin-left: -5px;
   margin-bottom: -10px;
   padding: 0;
-  width: 100vw;
+  width: 105vw;
 }
 .divider svg {
   width: 100vw;
