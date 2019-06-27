@@ -37,6 +37,9 @@
   .showcase .col-lg .image {
     margin-bottom: 60px;
   }
+  .showcase .col-lg .project-links {
+    display: none;
+  }
 }
 @media screen and (max-width: 799.88px) {
   #to-top {
