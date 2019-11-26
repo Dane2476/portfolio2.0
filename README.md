@@ -1,5 +1,6 @@
 # Portfolio
 
-This is my personal portfolio site. It's available live at https://danemaison.com
+This is my previous portfolio website. It's available live at https://old.danemaison.com
 
-Thanks for checking it out!
+The most up to date version can be found at https://danemaison.com
+
